@@ -8,7 +8,7 @@ mydb = mysql.connector.connect(
 )
 mycursor = mydb.cursor()
 
-mycursor.execute("SELECT * FROM MyGuests WHERE id >20")
+mycursor.execute("SELECT * FROM MyGuests WHERE id >30")
 
 myresult = mycursor.fetchall()  # fetchall() 获取所有记录
 
