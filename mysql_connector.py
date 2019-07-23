@@ -1,10 +1,12 @@
-import mysql.connector
+# import mysql.connector
+import MySQLdb
 
-mydb = mysql.connector.connect(
+mydb = MySQLdb.connect(
     host="127.0.0.1",  # 数据库主机地址
     user="root",  # 数据库用户名
     passwd="990526", # 数据库密码
-    database="test"
+    database="test",
+    charset='utf8'
 )
 mycursor = mydb.cursor()
 
