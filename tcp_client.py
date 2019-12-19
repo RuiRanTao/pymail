@@ -13,7 +13,7 @@ if __name__ == '__main__':
     # 发送文件下载请求数据
     tcp_client_socket.send(file_name_data)
     # 把数据写入到文件里
-    with open("/home/trr/Desktop/py/client/" + file_name, "wb") as file:
+    with open("/home/trr/Documents/py/client/" + file_name, "wb") as file:
         while True:
             # 循环接收文件数据
             file_data = tcp_client_socket.recv(1024)

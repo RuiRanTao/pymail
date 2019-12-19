@@ -8,7 +8,7 @@ def deal_client_request(ip_port, service_client_socket):
     # 连接成功后，输出“客户端连接成功”和客户端的ip和端口
     print("客户端连接成功", ip_port)
     # 我将查找位置进行了更改，改为到我的桌面去查找文件
-    os.chdir("/home/trr/Desktop/py/server/")
+    os.chdir("/home/trr/Documents/py/server/")
     # 接收客户端的请求信息
     file_name = service_client_socket.recv(1024)
     # 解码
